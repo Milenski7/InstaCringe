@@ -1,0 +1,163 @@
+.login-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0 0 0;
+}
+
+.registration-form-container2 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registration-form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form-group {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.input-label {
+    font-size: 0.7rem;
+    color: rgb(77, 77, 77);
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid grey;
+    height: 2rem;
+    outline: none;
+}
+
+.alert {
+    background-color: lightcoral;
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.forgot-password-link {
+    color: black;
+    font-size: 0.7rem;
+    margin: 1rem 0 0 0;
+}
+
+.registration-btn {
+    background-color: rgb(39, 39, 39);
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+.registration-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(231, 231, 231);
+}
+
+.registration-header {
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+.registration-list-header {
+    font-size: 0.7rem;
+    padding-left: 1.5rem;
+}
+
+.registration-list {
+    padding-left: 3rem;
+}
+
+.registration-list-item {
+    font-size: 0.7rem;
+    padding: 0.3rem 0 0 0;
+}
+
+.login-container-header {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(87, 87, 87);
+}
+
+.registration-link-btn {
+    width: 30%;
+    margin: 1.5rem;
+    font-size: 0.7rem;
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    cursor: pointer;
+    min-width: max-content;
+}
+
+@media only screen and (max-width: 872px){
+    .registration-form-container2 {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 704px){
+    .registration-form-container2 {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .registration-form {
+        margin-bottom: 2rem;
+        width: 90%;
+    }
+    .registration-container {
+        width: 90%;
+        align-items: center;
+    }
+    .login-container {
+        margin-bottom: 5rem;
+    }
+}
+
+@media only screen and (max-width: 518px){
+    .registration-list-header {
+        padding-left: 0;
+        text-align: center;
+        width: 90%;
+    }
+    .registration-list {
+        padding-left: 0;
+    }
+    .registration-container {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 386px){
+    .login-container {
+        margin-top: 3rem;
+    }
+    .registration-list-item {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+}

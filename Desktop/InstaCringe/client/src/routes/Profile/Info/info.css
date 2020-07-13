@@ -1,0 +1,224 @@
+.profile-container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-pic {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+  border-radius: 50%;
+  border: 5px double white;
+  margin: 2rem 0 2rem 0;
+  background-color: #272727;
+}
+
+.profile-left {
+  position: relative;
+  width: 15rem;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-left:hover .profile-left-text {
+  display: block;
+}
+
+.profile-left-text {
+  position: absolute;
+  color: white;
+  background-color: rgba(46, 46, 46, 0.534);
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 15rem;
+  margin: 2rem 0 2rem 0;
+  display: none;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px black;
+  font-weight: 500;
+}
+
+.upload-photo-btn {
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #2b2b2b;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0 0.5rem 0;
+}
+
+.profile-right {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.profile-name {
+  font-size: 1.2rem;
+}
+
+.profile-right-bio {
+  width: 90%;
+  text-align: justify;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.profile-right-bio-update {
+  color: white;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.profile-text-area {
+  resize: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.profile-right-follow {
+  color: white;
+  background-color: #2a6ce7;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.profile-right-unfollow {
+  color: white;
+  background-color: #e72a2a;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.profile-right-delete {
+  color: white;
+  background-color: #ff4128;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  margin: 0.5rem 0 0.5rem 0;
+  cursor: pointer;
+}
+
+.profile-right-counters {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-right-counters .profile-right-counter {
+  font-size: 0.8rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+@media only screen and (max-width: 1271px) {
+  .profile {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .profile-right-counters {
+    width: 70%;
+  }
+  .profile-right-bio {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  .profile-right-counters {
+    width: 95%;
+  }
+}
+/*# sourceMappingURL=info.css.map */

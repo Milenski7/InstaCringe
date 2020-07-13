@@ -1,0 +1,39 @@
+.register-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 0 0 0;
+}
+.form-group2 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registration-p {
+    margin: 1.5rem 0 2rem 0;
+}
+.p-link {
+    color: tomato;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 708px){
+    .form-group2 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 517px){
+    .registration-p {
+        width: 90%;
+        text-align: center;
+    }
+    .register-container {
+        margin-top: 3rem;
+    }
+}

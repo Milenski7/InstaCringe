@@ -1,0 +1,110 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 2px 1px 2px black;
+          box-shadow: 2px 1px 2px black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 801;
+  background-color: white;
+}
+
+.navbar-brand {
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.nav-logo {
+  width: 3rem;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.nav-brand-text {
+  font-size: 1.2rem;
+  padding: 0 0 0 0.2rem;
+}
+
+.nav {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.search-icon {
+  color: darkred;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 956px) {
+  .navbar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav {
+    width: 50%;
+  }
+  .navbar-brand {
+    margin-left: 1rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 516px) {
+  .navbar-brand {
+    margin-left: 0.1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .nav-brand-text {
+    font-size: 0.7rem;
+  }
+  .nav-link {
+    font-size: 0.7rem;
+  }
+  .search-icon {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 416px) {
+  .nav-logo {
+    width: 2rem;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

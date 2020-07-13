@@ -1,0 +1,125 @@
+.home-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 5rem 0;
+    align-items: center;
+}
+
+.home-feed {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feed-item {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    margin: 1rem 0 1rem 0;
+    background-color: white;
+}
+
+.feed-item-header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.feed-item-name {
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.feed-item-profilePic {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 50%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.feed-item-photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    cursor: pointer;
+}
+
+.feed-likes-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heart-icon {
+    margin: 0.5rem 0.2rem 0.5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    color: red;
+}
+
+.feed-item-comment {
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-left: 2rem;
+}
+
+.date-since {
+    font-size: 0.6rem;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid rgb(129, 129, 129);
+}
+
+.load-more {
+    width: 20%;
+    align-self: center;
+    margin: 1rem 0 1rem 0;
+    padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+    border-radius: 5px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    min-width: max-content;
+}
+.no-users-followed {
+    width: 90%;
+    text-align: center;
+}
+
+.no-people-following {
+    width: 90%;
+    text-align: center;
+}
+@media only screen and (max-width: 816px){
+    .home-feed {
+        width: 90%;
+    }
+    .feed-item {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 366px){
+    .home-feed {
+        width: 95%;
+    }
+    .feed-item {
+        width: 90%;
+    }
+}
